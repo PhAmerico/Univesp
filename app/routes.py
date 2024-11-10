@@ -29,11 +29,11 @@ def produto():
 @app.route('/adicionar', methods = ['POST'])
 def adicionar():
     if request.method == 'POST':
-        nome = request.form['Nome']
-        preco = request.form['Preço']
-        quant = request.form['Quantidade']
-        val = request.form['Validade']
-        desc = request.form['Descrição']
+        nome = request.form['nome']
+        preco = request.form['preco']
+        quant = request.form['quantidade']
+        val = request.form['validade']
+        desc = request.form['descricao']
 
         conectar = conectar_db()
         cursor = conectar.cursor()
