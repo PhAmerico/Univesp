@@ -2,11 +2,9 @@
 
 {% block conteudo %}
 
-
-
 <div class="container mt-5">
-    <h2>Adicionar Produto</h2>
-    <form method="POST" action="/adicionar">
+    <h2>Alterar Produto</h2>
+    <form method="POST" action="">
         <div class="form-group">
             <label for="nome">Nome</label>
             <input type="text" class="form-control" id="nome" name="nome" required>
@@ -27,8 +25,8 @@
             <label for="descricao">Descrição</label>
             <textarea class="form-control" id="descricao" name="descricao"></textarea>
         </div>
-        <button type="submit" class="btn btn-success">Adicionar</button>
-        <a href="/produto" class="btn btn-secondary">Voltar</a>
+        <button type="submit" class="btn btn-success">Salvar Alterações</button>
+        <a href="/produto" class="btn btn-secondary">Cancelar</a>
     </form>
 </div>
 
