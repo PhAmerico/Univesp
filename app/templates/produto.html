@@ -13,6 +13,8 @@
                 <th>ID</th>
                 <th>Nome</th>
                 <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Validade</th>
                 <th>Descrição</th>
                 <th>Quantidade</th>
                 <th>Validade</th>
@@ -22,12 +24,21 @@
         <tbody>
             {% for produto in produtos %}
             <tr>
+<<<<<<< HEAD
                 <td>{{ produto.id }}</td>
                 <td>{{ produto.nome }}</td>
                 <td>{{ produto.preco }}</td>
                 <td>{{ produto.descricao }}</td>
                 <td>{{ produto.quantidade }}</td>
                 <td>{{ produto.validade }}</td>
+=======
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+>>>>>>> c58311c0b944653f37b2152f751863f72e9f3974
                 <td>
                     <form action="/excluir/{{ produto.id }}" method="post" style="display:inline;" 
                     onsubmit="return confirm('Deseja realmente excluir o produto {{ produto.nome }}?');">
@@ -47,5 +58,9 @@
 
 
 
+<<<<<<< HEAD
 
 {% endblock %}
+=======
+{% endblock %}
+>>>>>>> c58311c0b944653f37b2152f751863f72e9f3974

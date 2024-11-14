@@ -6,15 +6,35 @@
 
 <div class="container mt-5">
     <h2>Adicionar Produto</h2>
+<<<<<<< HEAD
     <form method="POST" action="/adicionar">
+=======
+    {% with message = get_flashed_messages() %}
+    {% endwith %}
+
+    <form method="POST" action="/adicionar">
+        
+>>>>>>> c58311c0b944653f37b2152f751863f72e9f3974
         <div class="form-group">
             <label for="nome">Nome</label>
             <input type="text" class="form-control" id="nome" name="nome" required>
         </div>
+        
         <div class="form-group">
             <label for="preco">Preço</label>
             <input type="number" class="form-control" id="preco" name="preco" step="0.01" required>
         </div>
+        
+         <div class="form-group">
+            <label for="quantidade">Quantidade</label>
+            <input type="number" class="form-control" id="quantidade" name="quantidade" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="validade">Validade</label>
+            <input type="text" class="form-control" id="validade" name="validade" required>
+        </div>
+        
         <div class="form-group">
             <label for="qantidade">Quantidade</label>
             <input type="number" class="form-control" id="quantidade" name="quantidade" required>
@@ -27,6 +47,7 @@
             <label for="descricao">Descrição</label>
             <textarea class="form-control" id="descricao" name="descricao"></textarea>
         </div>
+        
         <button type="submit" class="btn btn-success">Adicionar</button>
         <a href="/produto" class="btn btn-secondary">Voltar</a>
     </form>
