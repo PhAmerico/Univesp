@@ -7,28 +7,31 @@
     <form method="POST" action="">
         <div class="form-group">
             <label for="nome">Nome</label>
-            <input type="text" class="form-control" id="nome" name="nome" required>
+            <input type="text" class="form-control" id="nome" name="nome" value="{{ produto['nome'] }}" required>
         </div>
         <div class="form-group">
             <label for="preco">Preço</label>
-            <input type="number" class="form-control" id="preco" name="preco" step="0.01" required>
+            <input type="number" class="form-control" id="preco" name="preco" step="0.01" value="{{ produto['preco'] }}" required>
         </div>
         <div class="form-group">
-            <label for="qantidade">Quantidade</label>
-            <input type="number" class="form-control" id="quantidade" name="quantidade" required>
+            <label for="quantidade">Quantidade</label>
+            <input type="number" class="form-control" id="quantidade" name="quantidade" value="{{ produto['quantidade'] }}" required>
         </div>
         <div class="form-group">
             <label for="validade">Validade</label>
-            <input type="date" class="form-control" id="validade" name="validade" step="0.01" required>
+            <input type="date" class="form-control" id="validade" name="validade" value="{{ produto['validade'] }}" required>
         </div>
         <div class="form-group">
             <label for="descricao">Descrição</label>
-            <textarea class="form-control" id="descricao" name="descricao"></textarea>
+            <textarea class="form-control" id="descricao" name="descricao">{{ produto['descricao'] }}</textarea>
         </div>
-        <button type="submit" class="btn btn-success">Salvar Alterações</button>
-        <a href="/produto" class="btn btn-secondary">Cancelar</a>
+        <div class="form-group">
+        <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+        <a href="/produto" class="btn btn-secondary">Voltar</a>
+        </div>
     </form>
 </div>
+
 
 
 
